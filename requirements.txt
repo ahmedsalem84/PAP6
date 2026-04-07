@@ -1,0 +1,20 @@
+streamlit>=1.30.0
+ollama>=0.1.7
+langchain>=0.1.10
+langchain-community>=0.0.25
+langchain-core>=0.1.28
+numpy
+pandas
+scikit-learn
+matplotlib
+seaborn
+networkx
+pyvis # For visualizing knowledge graphs
+GitPython # For cloning GitHub repos
+datasets # HuggingFace Datasets library
+astor # For AST parsing
+treelib # For tree structures in AST
+scipy # Often a dependency for optimization libraries
+# New additions for specific datasets:
+kaggle # For downloading Kaggle datasets
+zipfile # For extracting archives
