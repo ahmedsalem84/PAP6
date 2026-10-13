@@ -1,0 +1,96 @@
+{
+  "dataset": "Flask",
+  "run_id": "Flask_Representative_Run_012",
+  "optimizer_configuration": {
+    "algorithm": "SSA",
+    "llm_assignment": "Heterogeneous",
+    "mapping_engine": "T_thr"
+  },
+  "outer_cycles": [
+    {
+      "cycle_number": 1,
+      "evaluation_type": "Full_LLM_Execution",
+      "best_candidate_parameters": {
+        "p_mod": 0.55,
+        "p_comp": 0.45,
+        "p_cov": 0.60
+      },
+      "evaluated_metrics": {
+        "Maintainability_Index_MI": 72.1,
+        "Test_Pass_Rate_TPR": 78.0,
+        "Cyclomatic_Complexity_CC": 35.0,
+        "Conflict_Count": 7.0,
+        "Traceability_F1": 0.72
+      },
+      "composite_cost_f": 35.4
+    },
+    {
+      "cycle_number": 2,
+      "evaluation_type": "Full_LLM_Execution",
+      "best_candidate_parameters": {
+        "p_mod": 0.65,
+        "p_comp": 0.55,
+        "p_cov": 0.72
+      },
+      "evaluated_metrics": {
+        "Maintainability_Index_MI": 77.8,
+        "Test_Pass_Rate_TPR": 85.0,
+        "Cyclomatic_Complexity_CC": 30.5,
+        "Conflict_Count": 4.0,
+        "Traceability_F1": 0.81
+      },
+      "composite_cost_f": 24.3
+    },
+    {
+      "cycle_number": 3,
+      "evaluation_type": "Full_LLM_Execution",
+      "best_candidate_parameters": {
+        "p_mod": 0.78,
+        "p_comp": 0.68,
+        "p_cov": 0.85
+      },
+      "evaluated_metrics": {
+        "Maintainability_Index_MI": 82.0,
+        "Test_Pass_Rate_TPR": 90.5,
+        "Cyclomatic_Complexity_CC": 26.0,
+        "Conflict_Count": 2.0,
+        "Traceability_F1": 0.88
+      },
+      "composite_cost_f": 16.3
+    },
+    {
+      "cycle_number": 4,
+      "evaluation_type": "Full_LLM_Execution",
+      "best_candidate_parameters": {
+        "p_mod": 0.86,
+        "p_comp": 0.75,
+        "p_cov": 0.91
+      },
+      "evaluated_metrics": {
+        "Maintainability_Index_MI": 85.0,
+        "Test_Pass_Rate_TPR": 94.5,
+        "Cyclomatic_Complexity_CC": 23.0,
+        "Conflict_Count": 1.0,
+        "Traceability_F1": 0.93
+      },
+      "composite_cost_f": 11.7
+    },
+    {
+      "cycle_number": 5,
+      "evaluation_type": "Full_LLM_Execution",
+      "best_candidate_parameters": {
+        "p_mod": 0.90,
+        "p_comp": 0.80,
+        "p_cov": 0.95
+      },
+      "evaluated_metrics": {
+        "Maintainability_Index_MI": 86.5,
+        "Test_Pass_Rate_TPR": 96.5,
+        "Cyclomatic_Complexity_CC": 21.5,
+        "Conflict_Count": 0.0,
+        "Traceability_F1": 0.96
+      },
+      "composite_cost_f": 8.3
+    }
+  ]
+}

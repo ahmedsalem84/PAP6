@@ -1,0 +1,31 @@
+Record_Type,Configuration_or_Contrast,Metric,Mean_or_Delta,SD_or_CI,Effect_Size_Hedges_g,Effect_Size_Cliff_delta,Effect_Size_Matched_r_rb,Exact_p_value_Holm
+Performance,SA-LLM,MI,55.2,3.5,,,,
+Performance,SA-LLM,CC,48.7,4.8,,,,
+Performance,SA-LLM,TPR_Percent,40.5,5.5,,,,
+Performance,SA-LLM,Traceability_F1,0.28,0.06,,,,
+Performance,MA-LLM,MI,70.0,4.2,,,,
+Performance,MA-LLM,CC,38.0,4.0,,,,
+Performance,MA-LLM,Composite_Cost_f,44.7,5.0,,,,
+Performance,MA-GraphRAG,MI,80.0,3.0,,,,
+Performance,MA-GraphRAG,CC,31.0,3.5,,,,
+Performance,MA-GraphRAG,Composite_Cost_f,26.2,3.7,,,,
+Performance,MA-GraphRAG-OSE_SSA,MI,88.6,2.0,,,,
+Performance,MA-GraphRAG-OSE_SSA,CC,19.5,2.5,,,,
+Performance,MA-GraphRAG-OSE_SSA,Composite_Cost_f,9.4,1.3,,,,
+Performance,Optimizer_GWO,Composite_Cost_f,15.5,2.3,,,,
+Performance,Optimizer_PSO,Composite_Cost_f,19.0,2.7,,,,
+Performance,Optimizer_WOA,Composite_Cost_f,22.9,3.2,,,,
+Performance,Optimizer_GA,Composite_Cost_f,27.2,3.8,,,,
+Performance,Optimizer_FA,Composite_Cost_f,33.3,4.5,,,,
+Performance,Control_Random_Search,Composite_Cost_f,18.8,2.9,,,,
+Performance,Control_Fixed_p,Composite_Cost_f,21.1,3.1,,,,
+Statistical_Contrast,OSE vs MA-GraphRAG,MI,8.6,"[7.8, 9.4]",3.4,0.99,0.95,0.00012
+Statistical_Contrast,OSE vs MA-GraphRAG,CC,-11.5,"[-12.4, -10.6]",3.8,-0.99,-0.97,0.00008
+Statistical_Contrast,OSE vs MA-GraphRAG,Defect_F1,0.17,"[0.155, 0.185]",3.3,0.98,0.94,0.00015
+Statistical_Contrast,OSE vs MA-GraphRAG,TPR_Percent,11.0,"[9.8, 12.2]",2.8,0.97,0.93,0.00021
+Statistical_Contrast,OSE vs MA-GraphRAG,Composite_Cost_f,-16.8,"[-17.6, -16.0]",6.1,-1.0,-1.0,0.00004
+Statistical_Contrast,MA-GraphRAG vs MA-LLM,Defect_F1,0.17,"[0.15, 0.19]",2.6,0.96,0.91,0.00045
+Statistical_Contrast,MA-GraphRAG vs MA-LLM,Composite_Cost_f,-18.5,"[-19.8, -17.2]",4.2,-1.0,-0.98,0.00007
+Statistical_Contrast,SSA vs GWO,Composite_Cost_f,-6.1,"[-6.7, -5.6]",3.3,-0.98,-0.95,0.00011
+Statistical_Contrast,SSA vs Random_Search,Composite_Cost_f,-9.4,"[-10.1, -8.7]",4.2,-1.0,-0.99,0.00005
+Statistical_Contrast,SSA vs Fixed_p,Composite_Cost_f,-11.7,"[-12.4, -11.0]",4.9,-1.0,-1.0,0.00002

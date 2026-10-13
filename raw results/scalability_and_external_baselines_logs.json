@@ -1,0 +1,129 @@
+{
+  "scalability_study": {
+    "knowledge_graph_scale": [
+      {
+        "nodes": 1000,
+        "cycle_latency_sec": 41.2,
+        "retrieval_time_ms": 12,
+        "peak_vram_gb": 15.8,
+        "peak_ram_gb": 9.1
+      },
+      {
+        "nodes": 10000,
+        "cycle_latency_sec": 48.6,
+        "retrieval_time_ms": 38,
+        "peak_vram_gb": 16.1,
+        "peak_ram_gb": 14.7
+      },
+      {
+        "nodes": 50000,
+        "cycle_latency_sec": 61.9,
+        "retrieval_time_ms": 95,
+        "peak_vram_gb": 16.4,
+        "peak_ram_gb": 27.3
+      },
+      {
+        "nodes": 100000,
+        "cycle_latency_sec": 83.4,
+        "retrieval_time_ms": 171,
+        "peak_vram_gb": 16.4,
+        "peak_ram_gb": 44.8
+      },
+      {
+        "nodes": 500000,
+        "cycle_latency_sec": "OOM",
+        "retrieval_time_ms": null,
+        "peak_vram_gb": null,
+        "peak_ram_gb": ">64"
+      }
+    ],
+    "distributed_ray_cluster_strong_scaling": [
+      {
+        "worker_gpus": 1,
+        "strong_speedup": 1.0,
+        "parallel_efficiency_percent": 100,
+        "communication_overhead_percent": 0
+      },
+      {
+        "worker_gpus": 2,
+        "strong_speedup": 1.8,
+        "parallel_efficiency_percent": 90,
+        "communication_overhead_percent": 5
+      },
+      {
+        "worker_gpus": 4,
+        "strong_speedup": 3.2,
+        "parallel_efficiency_percent": 80,
+        "communication_overhead_percent": 9
+      },
+      {
+        "worker_gpus": 8,
+        "strong_speedup": 5.1,
+        "parallel_efficiency_percent": 64,
+        "communication_overhead_percent": 15
+      }
+    ]
+  },
+  "external_framework_benchmarks": [
+    {
+      "framework": "SA-LLM",
+      "pylint_score": 5.1,
+      "bandit_findings_per_kloc": 3.9,
+      "mutation_score_percent": 31.0,
+      "hidden_tests_pass_percent": 36.2,
+      "humaneval_pass_at_1_percent": 34.8,
+      "mbpp_pass_at_1_percent": 39.5,
+      "swe_bench_lite_resolved": "0/50"
+    },
+    {
+      "framework": "Self-Refine",
+      "pylint_score": 6.4,
+      "bandit_findings_per_kloc": 3.1,
+      "mutation_score_percent": 40.8,
+      "hidden_tests_pass_percent": 47.9,
+      "humaneval_pass_at_1_percent": 38.4,
+      "mbpp_pass_at_1_percent": 42.0,
+      "swe_bench_lite_resolved": "1/50"
+    },
+    {
+      "framework": "ChatDev",
+      "pylint_score": 6.0,
+      "bandit_findings_per_kloc": 3.4,
+      "mutation_score_percent": 38.1,
+      "hidden_tests_pass_percent": 44.5,
+      "humaneval_pass_at_1_percent": 33.7,
+      "mbpp_pass_at_1_percent": 38.2,
+      "swe_bench_lite_resolved": "0/50"
+    },
+    {
+      "framework": "MetaGPT",
+      "pylint_score": 6.2,
+      "bandit_findings_per_kloc": 3.2,
+      "mutation_score_percent": 41.7,
+      "hidden_tests_pass_percent": 46.3,
+      "humaneval_pass_at_1_percent": 35.2,
+      "mbpp_pass_at_1_percent": 40.1,
+      "swe_bench_lite_resolved": "1/50"
+    },
+    {
+      "framework": "MA-GraphRAG",
+      "pylint_score": 7.0,
+      "bandit_findings_per_kloc": 2.4,
+      "mutation_score_percent": 47.5,
+      "hidden_tests_pass_percent": 58.6,
+      "humaneval_pass_at_1_percent": 38.5,
+      "mbpp_pass_at_1_percent": 43.0,
+      "swe_bench_lite_resolved": "1/50"
+    },
+    {
+      "framework": "MA-GraphRAG-OSE",
+      "pylint_score": 8.1,
+      "bandit_findings_per_kloc": 1.2,
+      "mutation_score_percent": 57.3,
+      "hidden_tests_pass_percent": 71.4,
+      "humaneval_pass_at_1_percent": 41.1,
+      "mbpp_pass_at_1_percent": 44.1,
+      "swe_bench_lite_resolved": "2/50"
+    }
+  ]
+}
