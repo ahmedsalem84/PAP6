@@ -569,22 +569,6 @@ Large datasets, generated artifacts, and raw model outputs may require separate 
 
 ---
 
-## 14. Citation
-
-If you use MA-GraphRAG-OSE in academic work, please cite the associated manuscript. Replace the provisional entry below with the final bibliographic details once publication information is available.
-
-```bibtex
-@unpublished{salem_magraph_rag_ose,
-  author = {Salem, Ahmed and Hassan, Nada M.},
-  title  = {Closed-Loop Multi-Agent GraphRAG for Autonomous Software Engineering via Metaheuristic Optimization},
-  note   = {Manuscript under review}
-}
-```
-
-If the manuscript is published, update this citation with the verified journal, year, volume, pages, and DOI.
-
----
-
 ## 15. License
 
 A license has not been specified here. Check the repository's actual license file before copying, modifying, redistributing, or using the implementation commercially.
